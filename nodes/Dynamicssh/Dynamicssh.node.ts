@@ -42,7 +42,7 @@ async function resolveHomeDir(
 export class Dynamicssh implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'SSH (Dynamic)',
-		name: 'Dynamicssh',
+		name: 'dynamicssh',
 		icon: 'fa:terminal',
 		iconColor: 'black',
 		group: ['input'],
@@ -273,8 +273,7 @@ export class Dynamicssh implements INodeType {
 				type: 'string',
 				default: '',
 				placeholder: '/home/user/invoice.txt',
-				description:
-					'Full path (including file name) of the file to download.',
+				description:'Full path (including file name) of the file to download.',
 				required: true,
 			},
 			{
